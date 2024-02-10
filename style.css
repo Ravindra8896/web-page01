@@ -31,18 +31,24 @@ h1::before{
     position: absolute;
     width: 0;
     overflow: hidden;
-    color: orange;
     /* border-right: 3px solid orange; */
-    transition: 1s ease-in-out;
 }
 h1:hover::before{
     width: auto;
     filter: drop-shadow(5px -50px 10px orange);
+    color: orange;
+    transition: 1.5s ease-in-out;
+    
 
 }
 .navbar{
     display: flex;
     
+}
+.navbar a:hover{
+    
+    filter: drop-shadow(0 0 5px pink);
+
 }
 .navbar li{
     list-style: none;
@@ -89,7 +95,7 @@ nav{
     padding: 10px;
     padding-left: 16px;
 }
-.donate-btn{
+.sign-up-btn{
 
     background-color: rgb(226, 37, 37);
     font-size: 16px;
@@ -97,17 +103,20 @@ nav{
     font-family: cursive;
     float: right;
     border-top-right-radius: 10px;
-    padding-right: 60px;
-    font-family: 'Protest Riot', sans-serif;
 
+    font-family: 'Protest Riot', sans-serif;
+    
 }
 button{
     border: none;
-    width: 70px;
-    
+    width: 100px;
+    align-items: center;
 
 }
-.adopt-btn{
+button:hover{
+    filter: drop-shadow(-5px 0px 10px black);
+}
+.sign-in-btn{
     background-color: rgb(123, 247, 123);
     font-size: 16px;
     cursor: pointer;
@@ -117,25 +126,39 @@ button{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     
+    
 }  
 .right-searchbar-btn{
     float: right !important;
     display: flex;
 }  
-.bg-image{
-    display: flex;
-    height: 250px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background-color: red;
-    
+.image-box{
+    background-image: url(https://wallpapercave.com/wp/wp6437692.jpg) ;
+    background-size: cover;
+    display: block;
+    height: 450px;
+    width: auto;
+    position: relative;
+}
+.large-title-bar{
+    height: 10vw;
+    position: relative;
+}
+.title-box-nature{
+    padding: 10px 50px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin: 15% 40%;
+    padding: auto;
+    background-color: aliceblue;
+    font-size: xxx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(41, 119, 187);
+    border: 2px dodgerblue dotted;
     
 }
-img{    
-    max-width: 100%;
-    max-height: 100%;
 
-}
 .page-link:hover{
     box-sizing: border-box;
     padding: 0 2px;
@@ -150,11 +173,9 @@ img{
   }
 #bar-2{
     display: flex;
-    
     border: 3px dashed;
     border-color: aqua;
     background-color:whitesmoke;
-    
     align-items: stretch;
     
     
